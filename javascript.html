@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio de Ramiro</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        // Pedir datos al usuario
+        const nombre = prompt("Ingresa tu nombre:");
+        const apellido = prompt("Ingresa tu apellido:");
+        const fechaNacimiento = prompt("Ingresa tu fecha de nacimiento (YYYY-MM-DD):");
+
+        // Calcular los días vividos
+        const hoy = new Date();
+        const nacimiento = new Date(fechaNacimiento);
+        const diasVividos = Math.floor((hoy - nacimiento) / (1000 * 60 * 60 * 24));
+
+        // Mostrar mensajes
+        alert(`¡Bienvenido, ${nombre} ${apellido}!`);
+        alert(`Viviste ${diasVividos} días desde que naciste.`);
+    </script>
+</body>
+
+</html>
